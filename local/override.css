@@ -2,6 +2,10 @@
   display: none;
 }
 
+#SITE_FOOTER {
+  display: none;
+}
+
 #SITE_ROOT {
   top: 0 !important;
 }
