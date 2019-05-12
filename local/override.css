@@ -6,6 +6,10 @@
   display: none;
 }
 
+#SITE_BACKGROUND {
+  display: none !important;
+}
+
 #SITE_ROOT {
   top: 0 !important;
 }
