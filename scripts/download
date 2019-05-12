@@ -1,7 +1,6 @@
 rm -r michellespam.wixsite.com
 wget --mirror --convert-links --adjust-extension --page-requisites --no-parent https://michellespam.wixsite.com/michelleandpaul/
 rm *
-find . -name '*.html' | xargs gsed -i "s~https://michellespam.wixsite.com/michelleandpaul~https://paulandmichelle.github.io/wedding~g"
 find . -name '*.html' | xargs gsed -i 's~[<]head[>]~<head>\n<link rel="stylesheet" type="text/css" href="https://paulandmichelle.github.io/wedding/local/override.css">~g'
 find . -name '*.html' | xargs gsed -i "s~Mysite 1~Paul \& Michelle's Wedding~g"
 find . -name '*.html' | xargs gsed -i "s~https://www.wix.com/favicon.ico~https://paulandmichelle.github.io/wedding/local/favicon.ico~g"
