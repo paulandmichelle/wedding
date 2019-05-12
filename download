@@ -1,0 +1,6 @@
+wget --mirror --convert-links --adjust-extension --page-requisites --no-parent https://michellespam.wixsite.com/michelleandpaul/
+rm *
+ln -s michellespam.wixsite.com/michelleandpaul/* .
+git add .
+git commit -a -m "update"
+git push
