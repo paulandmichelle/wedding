@@ -1,6 +1,7 @@
 wget --mirror --convert-links --adjust-extension --page-requisites --no-parent https://michellespam.wixsite.com/michelleandpaul/
 rm *
 ln -s michellespam.wixsite.com/michelleandpaul/* .
+find . -name '*.html' | xargs gsed -i "s~https://michellespam.wixsite.com/michelleandpaul~https://paulandmichelle.github.io/wedding~g"
 git add .
 git commit -a -m "update"
 git push
